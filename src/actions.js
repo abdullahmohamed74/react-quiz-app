@@ -1,0 +1,9 @@
+export const DATA_ARRIVED = 'DATA_ARRIVED';
+export const DATA_FAILED = 'DATA_FAILED';
+export const START_QUESTIONS = 'START_QUESTIONS';
+export const SET_ANSWER = 'SET_ANSWER';
+export const NEXT_QUESTION = 'NEXT_QUESTION';
+export const FINISH_QUIZ = 'FINISH_QUIZ';
+export const RESTART_QUIZ = 'RESTART_QUIZ';
+export const SET_DIFFICULTY = 'SET_DIFFICULTY';
+export const SHOW_ANSWERS = 'SHOW_ANSWERS';
