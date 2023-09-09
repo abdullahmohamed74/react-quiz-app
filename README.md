@@ -2,7 +2,16 @@
 
 - a quiz of 15 questions to practice React fundamentals
 
-## tools
+## features
+
+- the user can:
+- select the difficult of the questions
+- track his progress
+- see the collected points
+- track his high score
+- can show his answers after finishing the quiz
+
+### tools
 
 - context API
 - useReducer hook
