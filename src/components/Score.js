@@ -1,7 +1,10 @@
 import { RESTART_QUIZ, SHOW_ANSWERS } from '../actions';
+import useQuizContext from '../hooks/useQuizContext';
 
-function Score({ points, maxPoints, dispatch, highScore }) {
+function Score() {
+  const { points, maxPoints, dispatch, highScore } = useQuizContext();
   const percentage = Math.ceil((points / maxPoints) * 100);
+  
   return (
     <div>
       <p className="result">

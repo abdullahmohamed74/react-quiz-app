@@ -1,4 +1,7 @@
-function QuestionHeader({ points, index, numQuestions, maxPoints, answerIndex }) {
+import useQuizContext from '../hooks/useQuizContext';
+
+function QuestionHeader() {
+  const { points, index, numQuestions, maxPoints } = useQuizContext();
   return (
     <header className="progress">
       <input

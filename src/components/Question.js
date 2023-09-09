@@ -1,6 +1,9 @@
 import { SET_ANSWER } from '../actions';
+import useQuizContext from '../hooks/useQuizContext';
 
-function Question({ question, answerIndex, dispatch }) {
+function Question() {
+  const { filteredQuestions, index, answerIndex, dispatch } = useQuizContext();
+  const question = filteredQuestions[index];
   const isAnswered = answerIndex !== null;
 
   return (

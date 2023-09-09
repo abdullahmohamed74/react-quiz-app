@@ -1,6 +1,9 @@
 import { FINISH_QUIZ, NEXT_QUESTION } from '../actions';
+import useQuizContext from '../hooks/useQuizContext';
 
-function NextQuestion({ dispatch, answerIndex, index, numQuestions }) {
+function NextQuestion() {
+  const { dispatch, answerIndex, index, numQuestions } = useQuizContext();
+  
   // only show Next or Finish buttom when the user selects an answer
   if (answerIndex === null) return;
 

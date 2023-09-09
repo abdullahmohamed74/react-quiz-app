@@ -1,12 +1,16 @@
 import { FINISH_QUIZ, NEXT_QUESTION } from '../actions';
+import useQuizContext from '../hooks/useQuizContext';
 
-function AnsweredQuestions({
-  question,
-  selectedOptionAnswers,
-  dispatch,
-  index,
-  numQuestions,
-}) {
+function AnsweredQuestions() {
+  const {
+    filteredQuestions,
+    selectedOptionAnswers,
+    dispatch,
+    index,
+    numQuestions,
+  } = useQuizContext();
+  
+  const question = filteredQuestions[index];
   const isLastIndex = index === numQuestions - 1;
   // access the user answer from "selectedOptionAnswers" array
   // using index of the question

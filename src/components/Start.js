@@ -1,6 +1,9 @@
 import { SET_DIFFICULTY, START_QUESTIONS } from '../actions';
+import useQuizContext from '../hooks/useQuizContext';
 
-function Start({ numQuestions, dispatch, highScore, difficulty }) {
+function Start() {
+  const { numQuestions, dispatch, highScore, difficulty } = useQuizContext();
+
   return (
     <div className="start">
       <h2>Welcome to The React Quiz!</h2>
